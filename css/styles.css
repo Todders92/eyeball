@@ -1,0 +1,76 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle,rgb(73, 3, 3),black);
+}
+p{
+    color: whitesmoke;
+    /* display: none; */
+    font-size: 0px;
+    transition: all 5s;
+}
+.initial{
+width: 700px;
+height: 700px;
+background: darkgoldenrod;
+
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all 1s;
+}
+.initial>div{
+    width: 40px;
+    height: 40px;
+   
+    display: flex;
+justify-content: center;
+align-items: center;
+transition: all 1s;
+
+}
+.initial>div>div{
+   
+transition-delay: 2s;
+transition: all 1s;
+
+}
+
+
+
+.initial:hover{ 
+    background-image: radial-gradient(circle, white, pink);
+    border-radius: 100% 0%;
+    transform: rotate(405deg);
+    transition: all 1s;
+    box-shadow: 5px 10px #0000009a;
+    border: black 5px solid;
+}
+
+.initial:hover> p{ 
+    font-size: 64px;
+    display: block;
+    transform: rotate(3555deg);
+    font-style: oblique;
+ }
+ .initial:hover>div{
+    border-radius: 50% 50%;
+    background-image: radial-gradient(circle,rgb(209, 77, 77),rgb(8, 8, 8));
+    /* box-shadow: 10px 10px gray; */
+    border: rgba(0, 0, 0, 0.493) 1px solid;
+    height: 58%;
+    width: 58%;
+    
+ }
+ .initial:hover>div>div{
+    border-radius: 00% 100%; 
+    background: black;
+    height: 40%;
+    width: 40%;
+    }
+
+  
+    
